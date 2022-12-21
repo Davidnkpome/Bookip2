@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: 'Raleway', Courier, Courier, monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #0065FC;
+    --color2: #DEEBFF;
+    --color3: #D9D9D9;
+    --color4: #FFFFFF;
+}
+
+
+body {
+    background-color: var(--color4);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* Mon principal container */
+
+#container {
+    background-color: var(--color4);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr 3fr 1fr;
+    grid-template-areas:
+        "nav nav"
+        "main main"
+        "article1 article2"
+        "article3 article3"
+        "BasDePage BasDePage";
+    height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.navBar {
+    background-color: var(--color4);
+    grid-area: nav;
+}
+
+.menuBar {
+    background-color: var(--color4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menuBar a {
+    padding-top: 25px;
+    padding-left: 45px;
+}
+
+.menuBar img {
+    height: 19px;
+}
+
+.hybride {
+    background-color: white;
+    flex-grow: 1;
+}
+
+/* menu */
+.menu {
+    display: flex;
+    background-color: var(--color4);
+    font-weight: 500;
+}
+
+.menu a:hover {
+    font-weight: 500;
+}
+
+li.hebergement,
+li.activités {
+    width: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* Main - corps de la page*/
+/*Recherche*/
+.main {
+    background-color: var(--color4);
+    grid-area: main;
+}
+
+.main h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.search1 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.search1 p {
+    padding: 15px;
+    width: 235px;
+    border: 1px solid #F2F2F2;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    /* Supprimer le contour */
+}
+
+
+.filters {
+    background-color: white;
+}
+
+.filters p {
+    
+}
+
+.filtres11 {
+    background-color: white;
+}
+
+.filtres12 {
+    background-color: white;
+}
+
+
+.article1 {
+    background-color: rgb(218, 233, 13);
+    grid-area: article1;
+    border-radius: 15px;
+}
+
+.article1 h2 {
+    background-color: #DEEBFF;
+}
+
+.bloc1 {
+    background-color: #DEEBFF;
+}
+
+.cards11 {
+    background-color: blueviolet;
+    display: flex;
+}
+
+.card11img {
+    background-color: #7fd212;
+}
+
+.card11text {
+    background-color: #0065FC;
+}
+
+.icons11 {
+    background-color: beige;
+}
+
+.cards12 {
+    background-color: burlywood;
+    display: flex;
+}
+
+
+
+
+.article2 {
+    background-color: brown;
+    grid-area: article2;
+    border-radius: 15px;
+}
+
+.title2 {
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title2 h2 {
+    background-color: #DEEBFF;
+}
+
+.title2 i {
+    background-color: #fcfc00;
+}
+
+.card21 {
+    background-color: violet;
+    display: flex;
+}
+
+.card21img {
+    background-color: aquamarine;
+}
+
+.card21text {
+    background-color: #fcfc00;
+}
+
+.article3 {
+    background-color: chocolate;
+    grid-area: article3;
+}
+
+.article3 h2 {
+    background-color: #DEEBFF;
+}
+
+.bloc4 {
+    background-color: #DEEBFF;
+    display: flex;
+}
+
+.card31 {
+    background-color: #7fd212;
+}
+
+.card31img {
+    background-color: #0065FC;
+}
+
+.card31text {
+    background-color: #DEEBFF;
+}
+
+.footer {
+    background-color: azure;
+    grid-area: BasDePage;
+}
+
+.footer3 {
+    background-color: yellowgreen;
+    display: flex;
+}
+
+.footer31 {
+    background-color: #0065FC;
+}
+
+.footer32 {
+    background-color: aquamarine;
+}
+
+.footer33 {
+    background-color: burlywood;
+}
+
+
+
+/*Format tablette*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+    #container {
+        background-color: aqua;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "article1"
+            "article2"
+            "article3"
+            "basDePage";
+    }
+
+    .navBar {
+        background-color: rgb(100, 15, 0);
+    }
+
+
+}
+
+/*Format mobile*/
+@media screen and (max-width: 767px) {
+
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "article2"
+            "article1"
+            "article3"
+            "basDePage";
+        margin: auto;
+    }
+
+    .navBar {
+        background-color: rgb(7, 175, 167);
+
+    }
+
+    .menuBar {
+        flex-direction: column;
+    }
+
+    .hybride {
+        display: none;
+    }
+
+    .search1 {
+        display: none;
+    }
+
+    .search2 {
+        display: flex;
+    }
+
+    .filters {
+        background-color: chocolate;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards11 {
+        flex-direction: column;
+    }
+
+    .cards12 {
+        flex-direction: column;
+    }
+
+    .card21 {}
+
+
+
+
+
+}
